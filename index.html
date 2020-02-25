@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+  </head>
+  <body>
+    <dialog id="myDialog">
+      <form method="dialog">
+        <div class="menu">
+          <h2>Are you sure want to continue?</h2>
+          <div class="buttons">
+            <button
+              class="ui inverted green button"
+              id="confirmBtn"
+              value="Yes"
+            >
+              Yes
+            </button>
+            <div class="or"></div>
+            <button class="ui inverted red button" value="Cancel">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="output-area">
+      <button class="ui inverted primary button" id="btnClick">Click me</button>
+      <output class="output"></output>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
