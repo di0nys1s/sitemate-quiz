@@ -8,5 +8,15 @@ btnClickMe.addEventListener("click", () => {
 });
 
 myDialog.addEventListener("close", () => {
-  outputText.value = "You just clicked " + myDialog.returnValue + "!";
+  $("output")
+    .text(`You just clicked ${myDialog.returnValue}!`)
+    .slideUp()
+    .slideDown()
+    .animate({ opacity: "0" })
+    .animate({ opacity: "1" });
+  if (myDialog.returnValue === "Yes") {
+    outputText.style.color = "green";
+  } else {
+    outputText.style.color = "red";
+  }
 });
